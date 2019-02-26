@@ -1,0 +1,9 @@
+@media screen and (min-width: 500px) {
+  .formcontainer {
+    margin: "auto";
+  }
+}
+.inputcontainer {
+  align-items: "center";
+  padding: "5px";
+}

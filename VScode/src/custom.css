@@ -1,0 +1,172 @@
+/*main css*/
+@media screen and (min-width: 50px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 15% auto;
+    background-color: #ffffff;
+    padding: 10px;
+    grid-gap: 5px;
+    height: 789px;
+  }
+
+  .grid-item1 {
+    background-color: rgba(59, 168, 231, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-column-end: span 2;
+    display: grid;
+    grid-auto-columns: auto 5%;
+    grid-template-areas: " grid-h1  grid-nav2";
+    padding: 1%;
+  }
+
+  .grid-h1 {
+    grid-area: grid-h1;
+    display: grid;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30pt;
+    align-items: center;
+  }
+  .grid-nav2 {
+    display: grid;
+    width: 30pt;
+    height: 10pt;
+    grid-area: grid-nav2;
+  }
+  #logout-btn {
+    font-family: monospace;
+    font-size: 8pt;
+  }
+
+  .grid-item2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item3 {
+    background-color: rgba(59, 168, 231, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10%;
+    text-align: center;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "grid-statement"
+      "grid-transfer"
+      "grid-profile";
+  }
+
+  @media screen and (min-width: 100px) {
+    .grid-Stcontainer {
+      display: grid;
+      grid-template-rows: 10% auto;
+      grid-template-columns: auto 60%;
+      grid-gap: 5px;
+      height: 650px;
+    }
+
+    .grid-statement {
+      grid-area: grid-statement;
+    }
+    .grid-transfer {
+      grid-area: grid-transfer;
+    }
+    .grid-profile {
+      grid-area: grid-profile;
+    }
+
+    .grid-edit {
+      grid-area: grid-edit;
+    }
+    .grid-add {
+      grid-area: grid-add;
+    }
+    .grid-delete {
+      grid-area: grid-delete;
+    }
+  }
+  .grid-Stitem1 {
+    background-color: rgba(59, 168, 231, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    grid-column-end: span 2;
+  }
+  .grid-button {
+    background-color: rgba(59, 168, 231, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  }
+  .grid-display {
+    background-color: rgba(59, 168, 231, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  }
+
+  #table-head {
+    font-family: monospace;
+    font-size: 12pt;
+  }
+
+  #stText {
+    font-family: monospace;
+    font-size: 18pt;
+  }
+  #trText {
+    font-family: monospace;
+    font-size: 18pt;
+  }
+  #prText {
+    font-family: monospace;
+    font-size: 18pt;
+  }
+  #stId {
+    font-size: 18pt;
+    align-items: center;
+    padding-top: 1%;
+  }
+  #trId {
+    font-size: 18pt;
+    align-items: center;
+    padding-top: 1%;
+  }
+  #prId {
+    font-size: 18pt;
+    align-items: center;
+    padding-top: 1%;
+  }
+  @media screen and (min-width: 100px) {
+    .grid-profileContainer {
+      display: grid;
+      grid-template-columns: auto 50%;
+      background-color: #ffffff;
+      padding: 5%;
+      grid-gap: 5px;
+      height: 300px;
+    }
+    .grid-Stitem2 {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      background-color: rgba(59, 168, 231, 0.8);
+      grid-column-end: span 1;
+      font-family: monospace;
+      padding: 3%;
+    }
+    .grid-Stitem3 {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      background-color: rgba(59, 168, 231, 0.8);
+      grid-column-end: span 1;
+      padding: 3%;
+    }
+    #label {
+      text-align: left;
+      font-family: monospace;
+      font-size: 12pt;
+    }
+    .EditProfile {
+      align-content: center;
+    }
+    #tag {
+      text-align: left;
+      font-family: monospace;
+      font-size: 12pt;
+    }
+  }
+}
